@@ -9,5 +9,16 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const Container = styled.div`
+  width: 100%;
+  height: 100%;
   display: flex;
-`
+  align-items: center;
+  justify-content: space-between;
+ 
+  img {
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    padding-left: 80px;
+  }
+`;

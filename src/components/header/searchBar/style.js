@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const SearchBarMainWrapper = styled.div`
   position: relative;
   display: flex;
-  margin-left: 130px;
   align-items: center;
 
   & input {
@@ -13,13 +12,13 @@ export const SearchBarMainWrapper = styled.div`
     border: none;
     padding-left: 20px;
     font-size: 15px;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "NanumSquare";
   }
 
   & input::placeholder {
     color: #acaeb2;
     font-size: 15px;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "NanumSquare";
   }
 
   & img {
