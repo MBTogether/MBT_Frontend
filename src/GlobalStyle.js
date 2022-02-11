@@ -17,6 +17,12 @@ const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
 /* font-family: 'Prociono', serif; */
 
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 700;
+  src: url("./util/assets/font/NanumSquare_acB.ttf");
+}
+
 p,
 a,
 li,
@@ -72,17 +78,6 @@ option {
   background-color: #f3f3f38f;
 }
 
-::-webkit-scrollbar {
-  width: 4px;
-  height: 6px;
-}
-::-webkit-scrollbar-track {
-  display: none;
-}
-::-webkit-scrollbar-thumb {
-  background: #ff7659;
-  border-radius: 4px;
-}
 `;
 
 export default GlobalStyle;
