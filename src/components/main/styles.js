@@ -8,7 +8,10 @@ export const ListBackground = styled.div`
   align-items: center;
   justify-content: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-bottom: 75px;
+=======
+>>>>>>> main
 =======
 >>>>>>> main
 `;
@@ -16,8 +19,11 @@ export const ListBackground = styled.div`
 export const LeftArrow = styled.div``;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 export const RightArrow = styled.div``;
 
+=======
+>>>>>>> main
 =======
 >>>>>>> main
 export const ListTop = styled.div`
@@ -73,6 +79,7 @@ export const ListBottom = styled.div`
     margin-right: 10px;
   }
 `;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 export const Section = styled.div`
@@ -145,5 +152,7 @@ export const List = styled.div`
     padding-top: 7px;
   }
 `;
+=======
+>>>>>>> main
 =======
 >>>>>>> main
