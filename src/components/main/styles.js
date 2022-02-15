@@ -7,25 +7,13 @@ export const ListBackground = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-bottom: 75px;
-=======
->>>>>>> main
-=======
->>>>>>> main
 `;
 
 export const LeftArrow = styled.div``;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 export const RightArrow = styled.div``;
 
-=======
->>>>>>> main
-=======
->>>>>>> main
 export const ListTop = styled.div`
   width: 161.71px;
   height: 37.95px;
@@ -79,8 +67,6 @@ export const ListBottom = styled.div`
     margin-right: 10px;
   }
 `;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 export const Section = styled.div`
   width: 100%;
@@ -152,7 +138,3 @@ export const List = styled.div`
     padding-top: 7px;
   }
 `;
-=======
->>>>>>> main
-=======
->>>>>>> main
