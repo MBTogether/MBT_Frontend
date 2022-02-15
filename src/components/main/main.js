@@ -25,7 +25,7 @@ const Main = () => {
           <span className="Mbti" path="/search">ENFP</span>
           <span className="Characteristics">: 특징은 이렇고 저렇고 등등</span>
         </div>
-        <div className="Line" />
+        <div className="ListLine" />
         <div className="List">
           <S.List>
             <span className="title">안녕하세요 반갑습니다.</span>

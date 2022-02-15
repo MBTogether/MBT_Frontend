@@ -100,7 +100,7 @@ export const Post = styled.div`
     color: #5c5fbf;
     padding-right: 10px;
   }
-  .Line {
+  .ListLine {
     width: 582px;
     height: 5px;
     background: #5c5fbf;
