@@ -1,5 +1,6 @@
 import React from "react";
 import * as S from "./style";
+import { FooterLogoIcon } from "../../../assets";
 import { FieldAndPersonData } from "../../../constance/footer/index";
 
 const Footer = () => {
@@ -15,6 +16,13 @@ const Footer = () => {
           );
         })}
       </S.FieldAndPersonWrapper>
+      <S.LogoWrapper>
+        <div className="footerTitleLogo">
+          <h1>MBTI 커뮤니티</h1>
+          <span>2022 MBTogether</span>
+        </div>
+        <img src={FooterLogoIcon} alt="푸터로고 아이콘" />
+      </S.LogoWrapper>
     </S.FooterContainer>
   );
 };
