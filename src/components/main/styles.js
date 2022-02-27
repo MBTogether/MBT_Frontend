@@ -6,13 +6,37 @@ export const ListBackground = styled.div`
   background: #e9e9e9;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 75px;
+  .mbtiList {
+  }
 `;
 
-export const LeftArrow = styled.div``;
+export const LeftArrow = styled.div`
+  width: 41px;
+  height: 41px;
+  background: #7579e7;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+`;
 
-export const RightArrow = styled.div``;
+export const RightArrow = styled.div`
+  width: 41px;
+  height: 41px;
+  background: #7579e7;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+`;
 
 export const ListTop = styled.div`
   width: 161.71px;
@@ -70,12 +94,13 @@ export const ListBottom = styled.div`
 
 export const Section = styled.div`
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-around;
 `;
 
 export const Post = styled.div`
-  width: 582px;
+  width: 30%;
   .PostHead {
     display: flex;
     justify-content: flex-start;
@@ -101,7 +126,7 @@ export const Post = styled.div`
     padding-right: 10px;
   }
   .ListLine {
-    width: 582px;
+    width: 100%;
     height: 5px;
     background: #5c5fbf;
     margin-bottom: 3px;
@@ -113,12 +138,14 @@ export const Post = styled.div`
 `;
 
 export const List = styled.div`
-  width: 582px;
+  width: 100%;
   height: 50px;
   display: flex;
   justify-content: space-around;
   background: #f0f2f4;
   align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
   &:hover {
     background-color: #ceddef;
   }
@@ -138,4 +165,3 @@ export const List = styled.div`
     padding-top: 7px;
   }
 `;
-
