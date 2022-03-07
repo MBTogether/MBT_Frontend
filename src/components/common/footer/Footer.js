@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./style";
-import { FooterLogoIcon } from "../../../assets";
+import { FooterLogoIcon } from "../../../assets/index";
 import { FieldAndPersonData } from "../../../constance/footer/index";
 
 const Footer = () => {
