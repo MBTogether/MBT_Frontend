@@ -5,6 +5,10 @@ import { useState } from "react";
 
 const Main = () => {
   const [page, setPage] = useState(7);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  function handleSwipe(direction) {
+    setCurrentIndex((currentIndex) => currentIndex + direction);
+  }
   const List = [
     {
       mbti: "ISTJ",
@@ -97,41 +101,77 @@ const Main = () => {
     { title: "제목6", day: "2022.02.22", img: "img6" },
     { title: "제목7", day: "2022.02.21", img: "img7" },
   ];
-
-  const Left = () => {
-    setPage((page) => page - 1);
-    alert("-");
+  let a = 0;
+  const onLeft = () => {
+    if (a > 0) {
+      a--;
+      alert(a);
+      return;
+    } else if (a === 0) {
+      a = 16;
+      alert(a);
+      return;
+    } else return;
   };
-  const Right = () => {
-    setPage((page) => page + 1);
-    alert("+");
+  const onRight = () => {
+    if (a < 16) {
+      a++;
+      alert(a);
+      return;
+    } else if (a === 16) {
+      a = 0;
+      alert(a);
+      return;
+    } else return;
+  };
+  const check = (listPage, value) => {
+    if (a <= listPage && listPage < page + a) {
+      if (a > 0) {
+        return (
+          <div className="mbtiList" key={listPage}>
+            <S.ListTop>
+              <span className="mbti">{value.mbti}</span>
+              <span className="characteristics">: {value.characteristic}</span>
+            </S.ListTop>
+            <S.ListBottom>
+              <span className="introduce">{value.introduce}</span>
+            </S.ListBottom>
+          </div>
+        );
+      }
+      return true;
+    } else return false;
   };
   return (
     <>
       <Header />
       <S.ListBackground>
-        <S.LeftArrow onClick={Left}>&lt;</S.LeftArrow>
+        <S.LeftArrow direction="prev" onClick={() => onLeft()}>
+          &lt;
+        </S.LeftArrow>
         {List.map((value, listPage) => {
-          if (listPage < page) {
-            return (
-              <div className="mbtiList" key={listPage}>
-                <S.ListTop>
-                  <span className="mbti">{value.mbti}</span>
-                  <span className="characteristics">
-                    : {value.characteristic}
-                  </span>
-                </S.ListTop>
-                <S.ListBottom>
-                  <span className="introduce">{value.introduce}</span>
-                </S.ListBottom>
-              </div>
-            );
-          }
-        })}
-        <S.RightArrow onClick={Right}>&gt;</S.RightArrow>
+            if (listPage < 7) {
+              return (
+                <div className="mbtiList" key={listPage}>
+                  <S.ListTop>
+                    <span className="mbti">{value.mbti}</span>
+                    <span className="characteristics">
+                      : {value.characteristic}
+                    </span>
+                  </S.ListTop>
+                  <S.ListBottom>
+                    <span className="introduce">{value.introduce}</span>
+                  </S.ListBottom>
+                </div>
+              );
+            }
+          })}
+        <S.RightArrow direction="next" onClick={() => onRight()}>
+          &gt;
+        </S.RightArrow>
       </S.ListBackground>
       <S.Section>
-      <S.Post>
+        <S.Post>
           <div className="PostHead">
             <span className="Mbti">ENFP</span>
             <span className="Characteristics">: 특징은 이렇고 저렇고 등등</span>

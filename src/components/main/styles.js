@@ -9,6 +9,11 @@ export const ListBackground = styled.div`
   justify-content: space-around;
   margin-bottom: 75px;
   .mbtiList {
+    cursor: pointer;
+  }
+  .listTrack{
+    display: flex;
+    justify-content: space-evenly;
   }
 `;
 
@@ -80,7 +85,8 @@ export const ListBottom = styled.div`
   justify-content: flex-end;
   align-items: center;
   .introduce {
-    height: 40px;
+    width: 55%;
+    height: auto;
     font-family: Noto Sans;
     font-style: normal;
     font-weight: 600;
@@ -88,7 +94,7 @@ export const ListBottom = styled.div`
     line-height: 20px;
     text-align: right;
     color: #8a8a8a;
-    margin-right: 10px;
+    margin-right: 5%;
   }
 `;
 
