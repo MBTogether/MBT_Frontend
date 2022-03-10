@@ -4,9 +4,11 @@ import MBTIProfile from "../mbtiProfile/MBTIProfile";
 
 const ProFileWrapper = () => {
   return (
-    <S.ProFileMainContainer>
-      <MBTIProfile mbti={"ENFP"} />
-    </S.ProFileMainContainer>
+    <S.CenterContainer>
+      <S.ProFileMainContainer>
+        <MBTIProfile mbti={"ISTP"} />
+      </S.ProFileMainContainer>
+    </S.CenterContainer>
   );
 };
 
