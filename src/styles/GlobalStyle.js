@@ -11,17 +11,6 @@ const GlobalStyle = createGlobalStyle`
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Noto Sans KR */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
-/* font-family: 'Noto Sans KR', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
-/* font-family: 'Prociono', serif; */
-
-@font-face {
-  font-family: "NanumSquare";
-  font-weight: 700;
-  src: url("./util/assets/font/NanumSquare_acB.ttf");
-}
 
 p,
 a,
