@@ -1,6 +1,7 @@
 export { default as MBTMainLogo } from "./image/mbt_main_logo.svg";
 export { default as SearchIcon } from "./icon/searchIcon.svg";
 export { default as FooterLogoIcon } from "./icon/footerLogo.svg";
+export { default as ModifyIcon } from "./icon/modifyIcon.svg";
 export { default as ENFJ } from "./image/ENFJ.svg";
 export { default as ENFP } from "./image/ENFP.svg";
 export { default as ENTJ } from "./image/ENTJ.svg";
