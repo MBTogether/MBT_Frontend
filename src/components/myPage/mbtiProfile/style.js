@@ -12,5 +12,6 @@ export const MbtiProfilWrapper = styled.div`
   p {
     font-size: 60px;
     font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
   }
 `;

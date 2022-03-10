@@ -8,7 +8,7 @@ export const CenterContainer = styled.div`
 `;
 
 export const ProFileMainContainer = styled.div`
-  width: 74%;
+  width: 75%;
   height: 400px;
   display: flex;
 `;
