@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
+export const CenterContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+`;
+
 export const ProFileMainContainer = styled.div`
   width: 74%;
   height: 400px;
-  margin-top: 80px;
   display: flex;
 `;
