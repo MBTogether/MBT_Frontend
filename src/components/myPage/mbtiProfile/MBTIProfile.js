@@ -9,9 +9,10 @@ const MBTIProfile = (props) => {
       {MBTITypeArray.map((value, index) => {
         if (mbti === value.mbti)
           return (
-            <p key={index} style={{ color: `${value.color}` }}>
-              {value.mbti}
-            </p>
+            <S.MbtiProfilWrapper key={index}>
+              <img src={value.mbti === "" ? " " : ""} alt="mbtiCharater" />
+              <p style={{ color: `${value.color}` }}>{value.mbti}</p>
+            </S.MbtiProfilWrapper>
           );
       })}
     </>
