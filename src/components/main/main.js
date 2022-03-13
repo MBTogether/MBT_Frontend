@@ -1,7 +1,9 @@
 import React from "react";
 import * as S from "./styles";
-import Header from "../header/Header";
+import Header from '../common/header/Header';
+import Footer from '../common/footer/Footer';
 import { useState } from "react";
+import { MBTICharacter } from '../../assets/index';
 
 const Main = () => {
   const [page, setPage] = useState(7);
@@ -154,6 +156,7 @@ const Main = () => {
               return (
                 <div className="mbtiList" key={listPage}>
                   <S.ListTop>
+                    {/* <img src= {MBTICharacter} alt="ENFP" /> */}
                     <span className="mbti">{value.mbti}</span>
                     <span className="characteristics">
                       : {value.characteristic}
@@ -226,6 +229,7 @@ const Main = () => {
           })}
         </S.Post>
       </S.Section>
+      <Footer />
     </>
   );
 };

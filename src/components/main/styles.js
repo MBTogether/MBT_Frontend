@@ -103,6 +103,7 @@ export const Section = styled.div`
   height: auto;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 10%;
 `;
 
 export const Post = styled.div`
