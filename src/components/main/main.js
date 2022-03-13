@@ -2,8 +2,9 @@ import React from "react";
 import * as S from "./styles";
 import Header from "../common/header/Header";
 import Footer from "../common/footer/Footer";
+import { MainMBTIData } from '../../constance/main/index';
+import { PostList } from "../../constance/main/index";
 import { useState } from "react";
-import { MBTICharacter } from "../../assets/index";
 
 const Main = () => {
   const [page, setPage] = useState(7);
@@ -59,7 +60,7 @@ const Main = () => {
         <S.LeftArrow direction="prev" onClick={() => onLeft()}>
           &lt;
         </S.LeftArrow>
-        {List.map((value, listPage) => {
+        {MainMBTIData.map((value, listPage) => {
           if (listPage < 7) {
             return (
               <div className="mbtiList" key={listPage}>
