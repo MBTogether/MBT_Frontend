@@ -6,6 +6,7 @@ const ListContainer = () => {
   return (
     <S.MyPageList>
       <h1>{like}</h1>
+      
     </S.MyPageList>
   );
 };
