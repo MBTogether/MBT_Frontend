@@ -1,12 +1,12 @@
 import React from "react";
 import * as S from "./style";
 
-const ListContainer = () => {
-  const like = "좋아요를 단 게시물";
+const ListContainer = (props) => {
+  const { title } = props;
+
   return (
     <S.MyPageList>
-      <h1>{like}</h1>
-      
+      <h1>{title}</h1>
     </S.MyPageList>
   );
 };
