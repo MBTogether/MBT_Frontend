@@ -1,4 +1,4 @@
-export const List = [
+export const MainMBTIData = [
   {
     mbti: "ISTJ",
     characteristic: "청렴결백한 논리주의자",
