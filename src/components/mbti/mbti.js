@@ -1,38 +1,11 @@
 import React from "react";
 import * as S from "./styles";
 import Header from "../common/header/Header";
+import { SearchList } from "../../constance/mbti";
+import { mbti } from "../../constance/mbti";
+import { List } from "../../constance/mbti";
 
 const Mbti = () => {
-  const SearchList = [
-    { mbti: "ISTJ" },
-    { mbti: "ISFJ" },
-    { mbti: "INFJ" },
-    { mbti: "INTJ" },
-    { mbti: "ISTP" },
-    { mbti: "ISFP" },
-    { mbti: "INFP" },
-    { mbti: "INTP" },
-    { mbti: "ESTP" },
-    { mbti: "ESFP" },
-    { mbti: "ENFP" },
-    { mbti: "ENTP" },
-    { mbti: "ESTJ" },
-    { mbti: "ESFJ" },
-    { mbti: "ENFJ" },
-    { mbti: "ENTJ" },
-  ];
-  const mbti = "INFP";
-
-  const List = [
-    { title: "안녕하세요.", day: "2020.02.28", img: "1" },
-    { title: "안녕하세요.1", day: "2020.02.28", img: "1" },
-    { title: "안녕하세요.2", day: "2020.02.28", img: "1" },
-    { title: "안녕하세요.3", day: "2020.02.28", img: "1" },
-    { title: "안녕하세요.4", day: "2020.02.28", img: "1" },
-    { title: "안녕하세요.5", day: "2020.02.28", img: "1" },
-    { title: "안녕하세요.6", day: "2020.02.28", img: "1" },
-  ];
-
   return (
     <>
       <Header />
