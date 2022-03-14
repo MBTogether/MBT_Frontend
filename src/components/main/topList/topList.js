@@ -3,8 +3,6 @@ import * as S from "./styles";
 import { MainMBTIData } from "../../../constance/main/index";
 
 const TopList = () => {
-  const [page, setPage] = useState(7);
-  const { listMbti } = { MainMBTIData };
   return (
     <S.ListBackground>
       <S.LeftArrow direction="prev">&lt;</S.LeftArrow>
