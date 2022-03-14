@@ -18,3 +18,5 @@ export { default as ISFJ } from "./image/ISFJ.svg";
 export { default as ISFP } from "./image/ISFP.svg";
 export { default as ISTJ } from "./image/ISTJ.svg";
 export { default as ISTP } from "./image/ISTP.svg";
+export { default as CloseEyesIcon } from "./icon/closeEyes.svg";
+export { default as OpenEyesIcon } from "./icon/openEyes.svg";
