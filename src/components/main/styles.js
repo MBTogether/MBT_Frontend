@@ -15,6 +15,9 @@ export const ListBackground = styled.div`
     display: flex;
     justify-content: space-evenly;
   }
+  .img{
+    width: 30%
+  }
 `;
 
 export const LeftArrow = styled.div`
