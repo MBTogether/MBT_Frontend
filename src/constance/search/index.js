@@ -18,7 +18,7 @@ export const SearchLists = [
   { mbti: "ENTJ" },
 ];
 
-export const SearchResult = [
+export const SearchResults = [
   {
     img: "img1",
     title: "제목1",
