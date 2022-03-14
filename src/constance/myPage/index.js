@@ -26,3 +26,9 @@ export const PostList = [
   { title: "제목6", day: "2022.02.22", img: "img6" },
   { title: "제목7", day: "2022.02.21", img: "img7" },
 ];
+
+export const PasswordPlaceholder = [
+  { text: "현재 비밀번호를 입력해 주세요." },
+  { text: "변경할 비밀번호를 입력해 주세요." },
+  { text: "변경할 비밀번호를  다시 한 번 입력해 주세요." },
+];
