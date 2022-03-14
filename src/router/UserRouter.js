@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import Test from '../components/test/Test';
-import Main from '../components/main/main'
+import Main from '../components/main/main';
 
 const UserRouter = () => {
     return (
