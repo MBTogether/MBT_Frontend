@@ -1,4 +1,4 @@
-export const SearchList = [
+export const SearchLists = [
   { mbti: "모든" },
   { mbti: "ISTJ" },
   { mbti: "ISFJ" },
