@@ -3,10 +3,12 @@ import * as S from "./style";
 import Header from "../common/header/Header";
 import ProFileWrapper from "./profileWrapper/ProFileWrapper";
 import ListConatiner from "./myPageList/ListContainer";
+import PasswordModal from "./passwordModal/PasswordModal";
 
 const MyPage = () => {
   return (
     <>
+      <PasswordModal isOpen={true} />
       <Header />
       <ProFileWrapper />
       <S.listWrapper>

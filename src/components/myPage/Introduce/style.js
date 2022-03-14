@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const IntroduceContainer = styled.div`
   display: flex;
-  width: 80%;
+  width: 76%;
   height: 100%;
   flex-direction: column;
   flex-wrap: wrap;
