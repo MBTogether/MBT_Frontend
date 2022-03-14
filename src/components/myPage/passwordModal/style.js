@@ -43,7 +43,7 @@ export const PasswordModalContainer = styled.form`
     margin-top: 50px;
   }
 
-  & > input {
+  & > div > input {
     width: 460px;
     height: 50px;
     border-radius: 30px;
@@ -55,15 +55,32 @@ export const PasswordModalContainer = styled.form`
     margin-top: 40px;
   }
 
-  & > input::placeholder {
+  & > div > input::placeholder {
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 500;
     color: #7378ffcc;
     font-size: 20px;
   }
 
+  & > div.passwordWrapper {
+    position: relative;
+  }
+
+  & > div > img {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    bottom: 9px;
+    right: 20px;
+    cursor: pointer;
+  }
+
   & > input[type="submit"] {
+    font-family: "Noto Sans KR", sans-serif;
     width: 490px;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 40px;
     background-color: #5c5fbf;
     color: #f0f2f4;
     text-align: center;

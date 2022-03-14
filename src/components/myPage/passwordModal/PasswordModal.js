@@ -1,6 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
+import { OpenEyesIcon, CloseEyesIcon } from "../../../assets/index";
 import * as S from "./style";
+import PasswordInputBox from "./PasswordInputBox";
+import { PasswordPlaceholder } from "../../../constance/myPage/index";
 
 const PasswordModal = (props) => {
   const { isOpen } = props;
@@ -10,7 +13,13 @@ const PasswordModal = (props) => {
     { password: "" },
     { password: "" },
   ]);
+
   const [passwordType, setPasswordType] = useState([
+    {
+      id: 0,
+      type: "password",
+      visible: false,
+    },
     {
       id: 1,
       type: "password",
@@ -18,11 +27,6 @@ const PasswordModal = (props) => {
     },
     {
       id: 2,
-      type: "password",
-      visible: false,
-    },
-    {
-      id: 3,
       type: "password",
       visible: false,
     },
@@ -46,17 +50,44 @@ const PasswordModal = (props) => {
     alert(`Submit event occurs`);
   };
 
+  const handlePasswordType = (id) => {
+    //매개변수에 id넣어주세요
+    let i = 0;
+    for (i = 0; i < 3; i++) {
+      console.log(id, passwordType[i].id);
+      if (passwordType[i].id === id) {
+        break;
+      }
+    }
+    let newArr = passwordType.map((item, index) => {
+      if (index === i) {
+        if (item.visible === true) {
+          return { id: i, type: "password", visible: false };
+        } else {
+          return { id: i, type: "text", visible: true };
+        }
+      }
+      return item;
+    });
+    setPasswordType(newArr);
+  };
+
   return isOpen ? (
     <S.Container>
       <S.Background />
       <S.PasswordModalContainer onSubmit={onSubmitEvent}>
         <h1>비밀번호 변경</h1>
-        <input type="password" placeholder="현재 비밀번호를 입력해 주세요." />
-        <input type="password" placeholder="변경할 비밀번호를 입력해 주세요." />
-        <input
-          type="password"
-          placeholder="변경할 비밀번호를  다시 한 번 입력해 주세요."
-        />
+        {PasswordPlaceholder.map((value, index) => {
+          return (
+            <PasswordInputBox
+              placeholder={value.text}
+              index={index}
+              handlePasswordType={handlePasswordType}
+              visible={passwordType[index].visible}
+              type={passwordType[index].type}
+            />
+          );
+        })}
         <input type="submit" value="변경하기" />
       </S.PasswordModalContainer>
     </S.Container>
