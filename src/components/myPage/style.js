@@ -5,4 +5,6 @@ export const listWrapper = styled.div`
   display: flex;
   justify-content: center;
   gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 50px;
 `;

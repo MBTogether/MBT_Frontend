@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
 export const IntroduceContainer = styled.div`
+  display: flex;
   width: 80%;
   height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 670px;
 `;
 
 export const TitleWrapper = styled.div`
