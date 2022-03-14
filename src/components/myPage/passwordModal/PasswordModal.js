@@ -1,9 +1,32 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "./style";
 
 const PasswordModal = (props) => {
   const { isOpen } = props;
+
+  const [passwordData, setPasswordData] = useState([
+    { password: "" },
+    { password: "" },
+    { password: "" },
+  ]);
+  const [passwordType, setPasswordType] = useState([
+    {
+      id: 1,
+      type: "password",
+      visible: false,
+    },
+    {
+      id: 2,
+      type: "password",
+      visible: false,
+    },
+    {
+      id: 3,
+      type: "password",
+      visible: false,
+    },
+  ]);
 
   useEffect(() => {
     onScollBlock();
