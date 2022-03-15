@@ -50,6 +50,7 @@ export const SettingBlock = styled.div`
   margin-top: 140px;
   height: 50px;
   justify-content: space-between;
+
   .button {
     height: 100%;
     border-radius: 20px;
@@ -57,17 +58,21 @@ export const SettingBlock = styled.div`
     font-weight: bold;
     background-color: white;
     font-size: 16px;
+    cursor: pointer;
   }
+
   .succesButton {
     width: 150px;
     border: 3px solid #5c5fbf;
     color: #5c5fbf;
   }
+
   .secessionButton {
     width: 100px;
     border: 3px solid #f65555;
     color: #f65555;
   }
+
   .buttonFlexEnd {
     height: 100%;
     display: flex;

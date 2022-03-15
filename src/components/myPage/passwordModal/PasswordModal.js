@@ -5,10 +5,10 @@ import * as S from "./style";
 import PasswordInputBox from "./PasswordInputBox";
 import { PasswordPlaceholder } from "../../../constance/myPage/index";
 import { useRecoilState } from "recoil";
-import {} from "../../../"
+import { PasswordModalIsOpen } from "../../../module/atom/myPage/index";
 
 const PasswordModal = () => {
-  const [isOpen, setIsOpen] = useRecoilState();
+  const [isOpen, setIsOpen] = useRecoilState(PasswordModalIsOpen);
 
   const [passwordData, setPasswordData] = useState([
     { password: "" },
@@ -41,6 +41,7 @@ const PasswordModal = () => {
   //모달창이 뜨면 스크롤을 막는 함수
   const onScollBlock = () => {
     if (isOpen) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";

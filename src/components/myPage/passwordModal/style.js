@@ -33,7 +33,9 @@ export const PasswordModalContainer = styled.form`
   border-radius: 30px;
   background-color: #f0f2f4;
   position: absolute;
-  top: 13rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   & > h1 {
     font-family: "Noto Sans KR", sans-serif;
