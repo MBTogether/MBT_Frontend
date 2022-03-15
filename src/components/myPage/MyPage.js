@@ -6,10 +6,9 @@ import ListConatiner from "./myPageList/ListContainer";
 import PasswordModal from "./passwordModal/PasswordModal";
 
 const MyPage = () => {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <PasswordModal isOpen={isOpen} setIsOpen={setIsOpen} />
+      <PasswordModal />
       <Header />
       <ProFileWrapper />
       <S.listWrapper>

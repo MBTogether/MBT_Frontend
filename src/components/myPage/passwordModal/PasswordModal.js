@@ -4,9 +4,11 @@ import { X_icon } from "../../../assets/index";
 import * as S from "./style";
 import PasswordInputBox from "./PasswordInputBox";
 import { PasswordPlaceholder } from "../../../constance/myPage/index";
+import { useRecoilState } from "recoil";
+import {} from "../../../"
 
-const PasswordModal = (props) => {
-  const { isOpen, setIsOpen } = props;
+const PasswordModal = () => {
+  const [isOpen, setIsOpen] = useRecoilState();
 
   const [passwordData, setPasswordData] = useState([
     { password: "" },
