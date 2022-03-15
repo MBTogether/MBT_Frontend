@@ -1,12 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
-import { OpenEyesIcon, CloseEyesIcon } from "../../../assets/index";
+import { X_icon } from "../../../assets/index";
 import * as S from "./style";
 import PasswordInputBox from "./PasswordInputBox";
 import { PasswordPlaceholder } from "../../../constance/myPage/index";
 
 const PasswordModal = (props) => {
-  const { isOpen } = props;
+  const { isOpen, setIsOpen } = props;
 
   const [passwordData, setPasswordData] = useState([
     { password: "" },
@@ -77,6 +77,13 @@ const PasswordModal = (props) => {
       <S.Background />
       <S.PasswordModalContainer onSubmit={onSubmitEvent}>
         <h1>비밀번호 변경</h1>
+        <img
+          src={X_icon}
+          onClick={() => {
+            setIsOpen(false);
+          }}
+          alt="X-icon"
+        />
         {PasswordPlaceholder.map((value, index) => {
           return (
             <PasswordInputBox

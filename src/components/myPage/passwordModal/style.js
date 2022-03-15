@@ -88,4 +88,13 @@ export const PasswordModalContainer = styled.form`
     font-size: 24px;
     padding: 0;
   }
+
+  & > img[alt="X-icon"] {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: 30px;
+    top: 25px;
+    cursor: pointer;
+  }
 `;

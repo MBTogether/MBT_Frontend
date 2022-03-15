@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import * as S from "./style";
 import Header from "../common/header/Header";
 import ProFileWrapper from "./profileWrapper/ProFileWrapper";
@@ -6,9 +6,10 @@ import ListConatiner from "./myPageList/ListContainer";
 import PasswordModal from "./passwordModal/PasswordModal";
 
 const MyPage = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <PasswordModal isOpen={true} />
+      <PasswordModal isOpen={isOpen} setIsOpen={setIsOpen} />
       <Header />
       <ProFileWrapper />
       <S.listWrapper>
