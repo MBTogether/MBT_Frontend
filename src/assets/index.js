@@ -20,3 +20,4 @@ export { default as ISTJ } from "./image/ISTJ.svg";
 export { default as ISTP } from "./image/ISTP.svg";
 export { default as CloseEyesIcon } from "./icon/closeEyes.svg";
 export { default as OpenEyesIcon } from "./icon/openEyes.svg";
+export { default as X_icon } from "./icon/x-icon.png";
