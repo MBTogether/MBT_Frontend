@@ -45,6 +45,8 @@ const PasswordModal = () => {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
+      //모달 인풋 데이터값 초기화
+      setPasswordData([{ password: "" }, { password: "" }, { password: "" }]);
     }
   };
 
@@ -57,7 +59,6 @@ const PasswordModal = () => {
     //매개변수에 id넣어주세요
     let i = 0;
     for (i = 0; i < 3; i++) {
-      console.log(id, passwordType[i].id);
       if (passwordType[i].id === id) {
         break;
       }
@@ -75,6 +76,21 @@ const PasswordModal = () => {
     setPasswordType(newArr);
   };
 
+  const onChangeEvent = (e, id) => {
+    const { value } = e.target;
+    setPasswordData(
+      passwordData.map((item, index) => {
+        if (index === id) {
+          return {
+            password: value,
+          };
+        } else {
+          return item;
+        }
+      })
+    );
+  };
+
   return isOpen ? (
     <S.Container>
       <S.Background />
@@ -90,11 +106,13 @@ const PasswordModal = () => {
         {PasswordPlaceholder.map((value, index) => {
           return (
             <PasswordInputBox
+              key={index}
               placeholder={value.text}
               index={index}
               handlePasswordType={handlePasswordType}
               visible={passwordType[index].visible}
               type={passwordType[index].type}
+              onChangeEvent={onChangeEvent}
             />
           );
         })}
