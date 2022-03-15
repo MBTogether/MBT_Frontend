@@ -82,11 +82,11 @@ export const MainMBTIData = [
 ]; // dummy data
 
 export const PostList = [
-  { title: "제목1", day: "2022.02.27", img: "img1" },
-  { title: "제목2", day: "2022.02.26", img: "img2" },
-  { title: "제목3", day: "2022.02.25", img: "img3" },
-  { title: "제목4", day: "2022.02.24", img: "img4" },
-  { title: "제목5", day: "2022.02.23", img: "img5" },
-  { title: "제목6", day: "2022.02.22", img: "img6" },
-  { title: "제목7", day: "2022.02.21", img: "img7" },
+  { title: "제목1", day: "2022.02.27", img: "TestImg" },
+  { title: "제목2", day: "2022.02.26", img: "TestImg" },
+  { title: "제목3", day: "2022.02.25", img: "TestImg" },
+  { title: "제목4", day: "2022.02.24", img: "TestImg" },
+  { title: "제목5", day: "2022.02.23", img: "TestImg" },
+  { title: "제목6", day: "2022.02.22", img: "TestImg" },
+  { title: "제목7", day: "2022.02.21", img: "TestImg" },
 ];

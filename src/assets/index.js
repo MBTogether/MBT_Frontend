@@ -17,4 +17,4 @@ export { default as ISFJ } from "./image/ISFJ.svg";
 export { default as ISFP } from "./image/ISFP.svg";
 export { default as ISTJ } from "./image/ISTJ.svg";
 export { default as ISTP } from "./image/ISTP.svg";
-export { default as TestImg } from "./image/testImg.svg";
+export { default as TestImg } from "./image/TestImg.svg";
