@@ -11,6 +11,7 @@ export const Section = styled.div`
 export const Post = styled.div`
   width: 30%;
   .PostHead {
+    height: 10%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -44,6 +45,15 @@ export const Post = styled.div`
     display: flex;
     flex-direction: column;
   }
+  .MBTIImg {
+    width: 10%;
+    height: 5%;
+  }
+`;
+
+export const MBTImg = styled.img`
+  width: 10%;
+  height: 100%;
 `;
 
 export const List = styled.div`

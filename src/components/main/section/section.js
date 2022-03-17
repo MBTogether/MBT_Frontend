@@ -1,14 +1,30 @@
 import React from "react";
 import * as S from "./styles";
-import { PostList } from "../../../constance/main";
+import { MainMBTIData, PostList } from "../../../constance/main/index";
 
 const Section = () => {
+  const mbti = "ISFP";
+  const characteristic = "따뜻한 감정을 가진 융통성 있는 예술가";
   return (
     <S.Section>
       <S.Post>
         <div className="PostHead">
-          <span className="Mbti">ENFP</span>
-          <span className="Characteristics">: 특징은 이렇고 저렇고 등등</span>
+          {MainMBTIData.map((list) => {
+            if (list.mbti === mbti) {
+              return (
+                <>
+                  <S.MBTImg
+                    src={require(`../../../assets/image/${list.mbti}.svg`)}
+                    alt="listHeaderMBTICharacter"
+                  />
+                  <span className="Mbti">{mbti}</span>
+                  <span className="Characteristics">
+                    : {characteristic}
+                  </span>
+                </>
+              );
+            }
+          })}
         </div>
         <div className="ListLine" />
         {PostList.map((list, page) => {
