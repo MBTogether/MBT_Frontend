@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import GlobalStyle from "./styles/GlobalStyle";
 import UserRouter from "./router/UserRouter";
 import { RecoilRoot } from "recoil";
+import "./index.css";
 
 const App = () => {
   return (
