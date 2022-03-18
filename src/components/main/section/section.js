@@ -9,21 +9,17 @@ const Section = () => {
     <S.Section>
       <S.Post>
         <div className="PostHead">
-          {MainMBTIData.map((list) => {
-            if (list.mbti === mbti) {
-              return (
-                <>
-                  <S.MBTImg
-                    src={require(`../../../assets/image/${list.mbti}.svg`)}
-                    alt="listHeaderMBTICharacter"
-                  />
-                  <span className="Mbti">{mbti}</span>
-                  <span className="Characteristics">
-                    : {characteristic}
-                  </span>
-                </>
-              );
-            }
+          {MainMBTIData.map((list, page) => {
+            return list.mbti === mbti ? (
+              <>
+                <S.MBTImg
+                  src={require(`../../../assets/image/${list.mbti}.svg`)}
+                  alt="listHeaderMBTICharacter"
+                />
+                <span className="Mbti">{mbti}</span>
+                <span className="Characteristics">: {characteristic}</span>
+              </>
+            ) : null;
           })}
         </div>
         <div className="ListLine" />
