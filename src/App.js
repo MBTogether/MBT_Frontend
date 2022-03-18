@@ -4,12 +4,14 @@ import GlobalStyle from "./styles/GlobalStyle";
 import UserRouter from "./router/UserRouter";
 import { RecoilRoot } from "recoil";
 import "./index.css";
+import Header from "./components/common/header/Header";
 
 const App = () => {
   return (
     <RecoilRoot>
       <BrowserRouter>
         <GlobalStyle />
+        <Header />
         <UserRouter />
       </BrowserRouter>
     </RecoilRoot>
