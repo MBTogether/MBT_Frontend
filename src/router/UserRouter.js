@@ -7,7 +7,7 @@ const UserRouter = () => {
     return (
         <Routes>
             <Route path="/test" element={<Test/>} />  {/* 컴포넌트 이렇게 이용 해주세요 */}
-            <Route path="/main" element={<Main/>} />
+            <Route path="/" element={<Main/>} />
         </Routes>
     );
 };
