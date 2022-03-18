@@ -9,7 +9,7 @@ const Section = () => {
     <S.Section>
       <S.Post>
         <div className="PostHead">
-          {MainMBTIData.map((list, page) => {
+          {MainMBTIData.map((list) => {
             return list.mbti === mbti ? (
               <>
                 <S.MBTImg
