@@ -9,12 +9,12 @@ const Introduce = () => {
   return (
     <S.IntroduceContainer>
       <S.TitleWrapper>
-        <b>정지원</b>
+        <b>김재현</b>
         <p>님</p>
         <img src={ModifyIcon} alt="modifyIcon" />
       </S.TitleWrapper>
       <S.IntroduceWrapper>
-        <p>안녕하세요, 반갑습니다. 친하게 지내요</p>
+        <p>안녕하세요, 재기발랄한 활동가입니다!</p>
         <img src={ModifyIcon} alt="modifyIcon" />
       </S.IntroduceWrapper>
       <S.SettingBlock>

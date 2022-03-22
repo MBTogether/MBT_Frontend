@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import * as S from "./style";
 import Header from "../common/header/Header";
 import ProFileWrapper from "./profileWrapper/ProFileWrapper";

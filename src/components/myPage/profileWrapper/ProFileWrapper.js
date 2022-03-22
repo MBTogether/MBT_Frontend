@@ -7,7 +7,7 @@ const ProFileWrapper = () => {
   return (
     <S.CenterContainer>
       <S.ProFileMainContainer>
-        <MBTIProfile mbti={"ESTP"} />
+        <MBTIProfile mbti={"ENFP"} />
         <Introduce />
       </S.ProFileMainContainer>
     </S.CenterContainer>
