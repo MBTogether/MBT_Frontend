@@ -10,13 +10,27 @@ export const ListBackground = styled.div`
   margin-bottom: 75px;
   .mbtiList {
     cursor: pointer;
+    position: relative;
   }
-  .listTrack{
+  .listTrack {
     display: flex;
     justify-content: space-evenly;
   }
-  .img{
-    width: 30%
+`;
+
+export const MBTIImg = styled.img`
+  width: 90%;
+  height: 120%;
+  position: absolute;
+  right: 40%;
+  bottom: 3%;
+  -webkit-user-drag: none;
+  &:before{
+    content: ' ';
+  }
+  &:after{
+    content: 'Broken Image';
+    text-align: center;
   }
 `;
 
@@ -54,6 +68,7 @@ export const ListTop = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  user-select: none;
   .mbti {
     width: 53.22px;
     height: 26px;
@@ -74,7 +89,6 @@ export const ListTop = styled.div`
     color: #ffffff;
     margin-right: 10px;
     text-align: right;
-    margin-bottom: 10px;
   }
 `;
 
@@ -87,6 +101,7 @@ export const ListBottom = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  user-select: none;
   .introduce {
     width: 55%;
     height: auto;
