@@ -9,16 +9,16 @@ const Section = () => {
     <S.Section>
       <S.Post>
         <div className="PostHead">
-          {MainMBTIData.map((list) => {
+          {MainMBTIData.map((list, page) => {
             return list.mbti === mbti ? (
-              <>
+              <div key={page}>
                 <S.MBTImg
                   src={require(`../../../assets/image/${list.mbti}.svg`)}
                   alt="listHeaderMBTICharacter"
                 />
                 <span className="Mbti">{mbti}</span>
                 <span className="Characteristics">: {characteristic}</span>
-              </>
+              </div>
             ) : null;
           })}
         </div>

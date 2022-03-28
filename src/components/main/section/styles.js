@@ -16,6 +16,10 @@ export const Post = styled.div`
     justify-content: flex-start;
     align-items: flex-end;
   }
+  .imgWrapper{
+    display: flex;
+    align-items: flex-end;
+  }
   .Mbti {
     height: 35px;
     color: #5c5fbf;
