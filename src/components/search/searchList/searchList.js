@@ -1,13 +1,17 @@
 import React from "react";
-import * as S from './styles';
+import * as S from "./styles";
 import { SearchLists } from "../../../constance/search";
 
-function SearchList(){
+function SearchList() {
+  const mbti = "ISFP";
   return (
     <>
       <S.SearchList>
         <div className="listImg">
-          <span className="img">img</span>
+          <S.MbtiImg
+            src={require(`../../../assets/image/${mbti}.svg`)}
+            alt="ListImg"
+          />
         </div>
         <div className="listWrapper">
           {SearchLists.map((value, page) => {
@@ -21,6 +25,6 @@ function SearchList(){
       </S.SearchList>
     </>
   );
-};
+}
 
 export default SearchList;

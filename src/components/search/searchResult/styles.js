@@ -79,6 +79,7 @@ export const SearchResult = styled.div`
   }
   .listTop {
     display: flex;
+    align-items: center;
     margin-left: 3%;
   }
   .listTitleWrapper {
@@ -98,3 +99,8 @@ export const SearchResult = styled.div`
     line-height: 16px;
   }
 `;
+
+export const Img = styled.img`
+  width: 5%;
+  margin-right: 30px;
+`

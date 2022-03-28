@@ -10,6 +10,7 @@ export const SearchList = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-top: 100px;
   }
   .img {
     width: 200px;
@@ -45,3 +46,7 @@ export const SearchList = styled.div`
   }
 `;
 
+export const MbtiImg = styled.img`
+  width: 60%;
+  height: 100%;
+`;
