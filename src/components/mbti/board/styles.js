@@ -6,7 +6,7 @@ export const Board = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-top: 10%;
 `;
 
 export const TitleWrapper = styled.div`
@@ -80,17 +80,22 @@ export const BoardList = styled.div`
     line-height: 16px;
     color: #000000;
   }
-  .img{
-      width: 20%;
-      height: 20%;
+  .img {
+    width: 20%;
+    height: 20%;
   }
 `;
 
 export const TitleDate = styled.div`
-    width: 30%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-left: 5%;
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: 5%;
+`;
+
+export const ListImg = styled.img`
+  width: 10%;
+  height: 80%;
 `;

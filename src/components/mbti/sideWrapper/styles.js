@@ -7,10 +7,6 @@ export const SideWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  .imgWrapper {
-    width: 100px;
-    height: 100px;
-  }
   .img {
     width: 20px;
     height: 20px;
@@ -23,6 +19,20 @@ export const ListWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const ImgWrapper = styled.div`
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+`;
+
+export const MbtiImg = styled.img`
+  width: 70%;
+  height: 50%;
+  margin-right: 30px;
 `;
 
 export const List = styled.div`
