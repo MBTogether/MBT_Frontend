@@ -12,7 +12,7 @@ const TopList = () => {
     count > 0 ? setCount(count - 1) : setCount(0); //
     console.log("count : " + count);
     setData(temp.slice(count, count + 7));
-    count == 0 ? console.log("끝에 도달함") : console.log("리스트 이동");
+    count === 0 ? console.log("끝에 도달함") : console.log("리스트 이동");
   };
 
   const onRightClick = () => {
@@ -20,7 +20,7 @@ const TopList = () => {
     count < 9 ? setCount(count + 1) : setCount(9); // 9 이상이 되면 9로 값을 고정.
     console.log("count : " + count);
     setData(temp.slice(count, count + 7));
-    count == 9 ? console.log("끝에 도달함") : console.log("리스트 이동");
+    count === 9 ? console.log("끝에 도달함") : console.log("리스트 이동");
   };
 
   return (
