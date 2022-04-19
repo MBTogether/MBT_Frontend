@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./style";
 import SearchBar from "./searchBar/SearchBar";
 import HeaderLoginWrapper from "./headerLoginWrapper/HeaderLoginWrapper";
-import { MBTMainLogo } from "../../util/assets/index";
+import { MBTMainLogo } from "../../../assets/index";
 
 const Header = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./style";
-import { SearchIcon } from "../../../util/assets";
+import { SearchIcon } from "../../../../assets";
 
 const SearchBar = () => {
   return (
