@@ -47,6 +47,7 @@ code {
   border: none;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 select,
